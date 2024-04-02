@@ -33,7 +33,7 @@ As you know Laravel is a very large robust PHP framework with alot of features, 
 <h1 align="center" style="margin-top: 40px;margin-bottom:40px;font-weight:700;"> Let's configure </h1>
 
 ## Setting up the Laravel Framework:
-First of all from the official documentation of *Laravel*, They recommend that we need to have PHP and Composer installed on our system inorder to create and  use the Laravel framework in our machine.
+>First of all from the official documentation of *Laravel*, They recommend that we need to have PHP and Composer installed on our system inorder to create and  use the Laravel framework in our machine.
 ![image](https://github.com/isaka-james/laravel-analysis/assets/76619967/c18c4a6a-e9fa-46da-ad37-5e726b2ae22f)
 
 We can  create our laravel project by this command:
@@ -60,7 +60,7 @@ git clone https://github.com/laravel/laravel.git
 cd laravel
 composer install
 ```
-From the above commands, we are downloading the laravel source code directly from github using git(Also you can download manually and extract the zip), and then we are moving the to the project and installing the composer dependencies.
+From the above commands, we are downloading the laravel source code directly from github using git(Also you can download manually and extract the zip), and then we are moving to the project and installing the composer dependencies.
 >You can notice upon using this method, *vendor* directory is not present. But after running the *composer* command the vendor directory will be created containing the composer dependencies. We'll look further on this later.
 
 >Also when using method you'll need to chang the file *.env-example* to *.env*, this is the  file that contains the enviroment variables for our application.
@@ -101,16 +101,16 @@ php artisan migrate
 ```bash
 php artisan serve
 ```
-By default *Laravel* listens on the port **8000** , so after running that command we can type on the browser *http:localhost:8000*, to see our favourite default page.
+>By default *Laravel* listens on the port **8000** , so after running that command we can type on the browser *http:localhost:8000*, to see our favourite default page.
 ![image](https://github.com/isaka-james/laravel-analysis/assets/76619967/b3fe35aa-4e09-472c-9ade-b2b229c04f8a)
 
 ## The Basic Tree of Laravel:
 The tree is somewhat large so I've put in a separate file you can see here the [Laravel Tree](/non-laravel/tree.md).
 
 ## Let's start
-So now you've successfully seen the default page from *laravel*, so now we're going to know how that page was able to rendered on the browser/client.
+So now you've successfully seen the default page from *laravel*, so now we're going to know what was behind the scene.
 
-We'll start with the artisan file, which is the one which we run before (*php artisan serve*), so go [here](artisan.md)
+We'll start with the artisan file, [here](artisan.md)
 
 
 <h1 align="center" style="margin-top: 40px;margin-bottom:40px;font-weight:700;"> Jump to your interest analysis: </h1>
