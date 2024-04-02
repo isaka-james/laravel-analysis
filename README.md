@@ -1,6 +1,6 @@
 <div align="center">
   <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-  <h1>Advanced Web-Artisans - Laravel Understanding🤵‍♂</h1>
+  <h1>🚀 Advanced Web-Artisans - Laravel Understanding 🤵‍♂</h1>
 
   
   <p>
@@ -9,68 +9,63 @@
 </div>
 
 
-## What is this?
-I designed this, for the people who have the love for **PHP**, not just the *framework users* but for people who want to know what is happening behind the scene in this popular PHP framework.
+## What's this about? 🤔
+I've crafted this for those who have a deep love for **PHP**. It's not just for the *framework users*, but also for those curious about the magic behind this popular PHP framework.
 
-Hence, Then I'm very pleased to share the idea behind/inner-works of this popular PHP framework with you!
+So, I'm thrilled to share the inner workings of Laravel with you!
 
-#### My Comment:
-I am very grateful to this guy [@taylorotwell](https://github.com/taylorotwell) for putting *Laravel* framework public accessible, And if you're looking for someone to follow or sponsoring then considering  him will be a great choice!
+#### My Thoughts 💭:
+Big thanks to [@taylorotwell](https://github.com/taylorotwell) for making *Laravel* framework accessible to all. If you're looking for someone to follow or sponsor, he's a great choice!
 
 ![image](https://github.com/isaka-james/laravel-analysis/assets/76619967/50ecc113-679f-4b1c-85d9-13a424da4e9e)
 
-> "Always try to make developers life easy, You'll go heaven for that"
-— Me
+> "Make developers' lives easier, and you'll be heaven-bound for sure."
+— Yours Truly
 
 
-#### Contributions:
-As you know Laravel is a very large robust PHP framework with alot of features, and technologies. I am sincerely welcome all the corrections,suggestions, new ideas to this analysis, so we can help fellow web-artisans to understand better this framework.
-
-
+#### Contributions Welcome! 🎉
+Laravel is a vast PHP framework with a plethora of features and technologies. I warmly welcome all corrections, suggestions, and new ideas to this analysis. Together, let's help fellow web-artisans better understand this framework.
 
 
 
-<h1 align="center" style="margin-top: 40px;margin-bottom:40px;font-weight:700;"> Let's configure </h1>
+<h1 align="center" style="margin-top: 40px;margin-bottom:40px;font-weight:700;"> Let's Get Set Up 🛠️</h1>
 
-## Setting up the Laravel Framework:
->First of all from the official documentation of *Laravel*, They recommend that we need to have PHP and Composer installed on our system inorder to create and  use the Laravel framework in our machine.
+## Installing Laravel:
+>First off, according to the official *Laravel* documentation, you'll need to have PHP and Composer installed on your system to create and use Laravel projects.
+
 ![image](https://github.com/isaka-james/laravel-analysis/assets/76619967/c18c4a6a-e9fa-46da-ad37-5e726b2ae22f)
 
-We can  create our laravel project by this command:
+To create a new Laravel project, use this command:
 ```bash
 composer create-project laravel/laravel:^11.0 laravel-project
 ```
 
-Altenative also we can create our Laravel application by installing the *Laravel installer* globally in our machine:
+Alternatively, you can use the Laravel installer:
 ```bash
 composer global require laravel/installer
 laravel new laravel-project
 ```
-If you are wondering what is *composer*?, according to wikipedia:
->Composer is an application-level dependency manager for the PHP programming language that provides a standard format for managing dependencies of PHP software and required libraries. It was developed by Nils Adermann and Jordi Boggiano, who continue to manage the project.
 
->Also you can go to [composer official website](https://getcomposer.org/doc/00-intro.md) to know more about *composer*.
+If you're wondering what *Composer* is, it's an application-level dependency manager for PHP. Check out Composer's [official website](https://getcomposer.org/doc/00-intro.md) for more info.
 
-Both those are the commands that create the project called *laravel-project*.
+## Another Way:
+For the geeks among us, here's another method:
 
-### Altenative way of creating project
-Also as a geek, you should know other ways of creating the laravel project:
 ```bash
 git clone https://github.com/laravel/laravel.git
 cd laravel
 composer install
 ```
-From the above commands, we are downloading the laravel source code directly from github using git(Also you can download manually and extract the zip), and then we are moving to the project and installing the composer dependencies.
->You can notice upon using this method, *vendor* directory is not present. But after running the *composer* command the vendor directory will be created containing the composer dependencies. We'll look further on this later.
+Using this method, you'll need to change the file .env-example to .env, which contains the environment variables for your application.
+>Notice that the vendor directory is not present initially. After running the composer command, the vendor directory will be created, containing the composer dependencies. We'll explore this further later on.
 
->Also when using method you'll need to chang the file *.env-example* to *.env*, this is the  file that contains the enviroment variables for our application.
+## Setting Up the Project:
+By default, Laravel uses sqlite database. However, for this analysis, we'll use mysql:
 
-##  SetUp the Project:
-By default, the *Laravel* framework uses *sqlite* database, but in this analysis we'll use *mysql* since it is easy to use and almost everybody know it:
-
-So by saying so we'll need to change these lines from the *.env* file.
+Update the .env file as follows:
 
 Before:
+
 ```.env
 DB_CONNECTION=sqlite
 # DB_HOST=127.0.0.1
@@ -79,7 +74,9 @@ DB_CONNECTION=sqlite
 # DB_USERNAME=root
 # DB_PASSWORD=
 ```
+
 After:
+
 ```.env
 DB_CONNECTION=sqlite
 DB_HOST=localhost
@@ -88,34 +85,34 @@ DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-We've assumed that you've a database called *laravel*, as you have seen these are your database credidentials, customize them as you desire.
 
-Make sure you've already created your database, you can use [mariadb](https://www.vinchin.com/database-tips/install-mariadb-on-windows-linux-macos.html) or [phpmyadmin](https://docs.phpmyadmin.net/en/latest/setup.html) to create your database, incase our database name is *laravel*.
+Assuming you have a database called *laravel*, customize these credentials as needed.
 
-After that we can run this command which like initialize the pre-tables that comes with *laravel*, i.e *session storage* and more, we'll look after them later:
+Ensure you've created your database using  [mariadb](https://www.vinchin.com/database-tips/install-mariadb-on-windows-linux-macos.html) or [phpmyadmin](https://docs.phpmyadmin.net/en/latest/setup.html).
+
+Next, run this command to initialize the pre-defined tables that come with Laravel, such as session storage:
+
 ```bash
 php artisan migrate
 ```
 
-### Finaly we can test our configurations:
+## Testing the Configuration:
+
 ```bash
 php artisan serve
 ```
->By default *Laravel* listens on the port **8000** , so after running that command we can type on the browser *http:localhost:8000*, to see our favourite default page.
-![image](https://github.com/isaka-james/laravel-analysis/assets/76619967/b3fe35aa-4e09-472c-9ade-b2b229c04f8a)
+>By default, Laravel listens on port 8000. After running this command, open your browser and go to http:localhost:8000 to see the default page.
+>![image](https://github.com/isaka-james/laravel-analysis/assets/76619967/b3fe35aa-4e09-472c-9ade-b2b229c04f8a)
 
-## The Basic Tree of Laravel:
-The tree is somewhat large so I've put in a separate file you can see here the [Laravel Tree](/non-laravel/tree.md).
+## Laravel's Basic Tree:
+The tree is quite large, so I've placed it in a separate file. You can view the Laravel Tree [here](/non-laravel/tree.md).
 
-## Let's start
-So now you've successfully seen the default page from *laravel*, so now we're going to know what was behind the scene.
+## Let's Dive In 🏊‍♂️
+Now that you've seen Laravel's default page, let's delve into what's behind the scenes.
 
-We'll start with the artisan file, [here](artisan.md)
+We'll start with the artisan file, [here](artisan.md).
 
-
-<h1 align="center" style="margin-top: 40px;margin-bottom:40px;font-weight:700;"> Jump to your interest analysis: </h1>
-
-
+<h1 align="center" style="margin-top: 40px;margin-bottom:40px;font-weight:700;"> Jump to Your Interest 🚀</h1>
 
 ## License
-[MIT License](LICENSE)
+[MIT](LICENSE)
