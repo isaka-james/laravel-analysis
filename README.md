@@ -32,6 +32,20 @@ Laravel is a vast PHP framework with a plethora of features and technologies. I 
 
 <h1 align="center" style="margin-top: 40px;margin-bottom:40px;font-weight:700;"> Let's Get Set Up 🛠️</h1>
 
+## Blueprint 🗺️
+
+- [**Installing Laravel**](https://github.com/isaka-james/laravel-analysis#installing-laravel)
+- [**Altenative ways of installing Laravel**](https://github.com/isaka-james/laravel-analysis#another-way)
+- [**Setting up the project/Configuring**](https://github.com/isaka-james/laravel-analysis#setting-up-the-project)
+- [**Launching Laravel Project**](https://github.com/isaka-james/laravel-analysis#testing-the-configuration)
+- [**Laravel Basic Tree**](https://github.com/isaka-james/laravel-analysis#laravels-basic-tree)
+- [**Diving into Laravel Engineering**](https://github.com/isaka-james/laravel-analysis#lets-dive-in-%EF%B8%8F)
+- [**Jump into your interest Laravel part**](https://github.com/isaka-james/laravel-analysis#-jump-to-your-interest-)
+- [**LICENSE**](https://github.com/isaka-james/laravel-analysis#-jump-to-your-interest-)
+
+  
+
+
 ## Installing Laravel:
 >First off, according to the official *Laravel* documentation, you'll need to have PHP and Composer installed on your system to create and use Laravel projects.
 
