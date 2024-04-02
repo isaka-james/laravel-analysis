@@ -12,7 +12,9 @@
 ## What's this about? 🤔
 I've crafted this for those who have a deep love for **PHP**. It's not just for the *framework users*, but also for those curious about the magic behind this popular PHP framework.
 
-So, I'm thrilled to share the inner workings of Laravel with you!
+This serves as an understanding of how Laravel works, an operational tutorial, and offers unique ways to optimize along the way. You're welcome to delve deeper into Laravel and advance your skills.
+
+So, I'm eager and grateful to share the inner workings of Laravel with you fella!
 
 #### My Thoughts 💭:
 Big thanks to [@taylorotwell](https://github.com/taylorotwell) for making *Laravel* framework accessible to all. If you're looking for someone to follow or sponsor, he's a great choice!
