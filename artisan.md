@@ -20,7 +20,7 @@ As per the Laravel documentation, the artisan file serves as the entry point for
 Let's examine the artisan file line by line:
 
 
-### Artisan: line 1
+### artisan: line 1
 ```php
 #!/usr/bin/env php
 ```
@@ -56,6 +56,51 @@ The line before this one tells us that it's adding the Composer autoloader. Even
 #### What is autoload.php?
 The `vendor/autoload.php` file, accessible [here](vendor/autoload.php), handles autoload functionality. I won't delve further into its details as it falls outside the scope of Laravel-specific discussion.
 
+### artisan: line 12-15
+```php
+// Bootstrap Laravel and handle the command...
+$status = (require_once __DIR__.'/bootstrap/app.php')
+    ->handleCommand(new ArgvInput);
+  
+exit($status);
+  
+```
+After including app.php(using require), it obtains an instance of our Laravel application.
+
+Then, it uses this application instance to run a command through Artisan, Laravel's command-line tool.
+The command execution result, such as success or failure, is stored in the $status variable.
+
+Then you can know what is going on `bootstrap/app.php`, [here](bootstrap/app.md)
 
 
+## What I learnt on artisan analysis:
+If you want to see where are the commands stored and logic implemented on their actions, go [here](/)
+#### some most used commands:
+```bash
+php artisan list     # This command will list available Artisan commands
+
+php artisan help migrate     # Replace 'migrate' with any command you want to see its documentation
+
+php artisan      # Same as 'php artisan list'
+
+php artisan make:controller Admin/HomeController    # This create a controller inside a Admin folder, like this app/Http/Controller/Admin/HomeController
+
+php artisan make:model Logs    # This creates a Logs model like this app/Models/Logs
+
+php artisan make:middleware FilterAllowedUsers   # This filter the http request coming to the application using custom filtering/logic, Remember to register them
+
+php artisan migrate    # Do the migration to your laravel application
+
+php artisan migrate:fresh    # Deleting the all the tables and do the migration again
+
+php artisan db:seed     # Populate your database with seeders
+
+# Have your favourite command? then pull request :)
+```
+#### You can customize your commands!
+Also you can customize your own commands using this command:
+```bash
+php artisan make:command MyCustomCommand
+```
+Look at `app/console/Commands` to edit your custom command, for more details go [here](https://laravel.com/docs/11.x/artisan#generating-commands)
 
