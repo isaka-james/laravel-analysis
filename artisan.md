@@ -8,6 +8,16 @@
   </p>
 </div>
 
+## Blueprint 🗺️
+
+- [**Author**](#author-comment)
+- [**Pre-Knowledge about artisan**](#pre-knowledge-about-artisan)
+- [**artisan all lines of code explained**](#lets-go)
+- [**What I discovered on artisan analysis**](#what-i-learnt-on-artisan-analysis)
+- [**Most artisan used commands**](#some-most-used-commands)
+- [**Make your own artisan commands**](#you-can-customize-your-commands)
+
+  
 ## Author comment:
 *Navigating the Laravel ecosystem has been challenging due to the scarcity of up-to-date resources. Despite some efforts to find current information, I've encountered deficiency of resources that accurately reflect the latest changes in Laravel. This discrepancy has made it particularly challenging to understand the many advancements and updates introduced in versions beyond Laravel 11. Consequently, I've found myself grappling with outdated materials, hindering my ability to grasp the wonders of the latest Laravel iterations.*
 
