@@ -51,7 +51,7 @@ Basically, this code snippet does two main things. First, it checks if headers h
 
 If PHP is running in CLI mode or if display_errors is turned off in the PHP configuration, it outputs the error message to STDERR (standard error) if possible, or to the client browser if headers haven't been sent yet. Lastly, it triggers a user-defined error with the prepared error message, indicating a critical issue (E_USER_ERROR).
 
-## Line 22-24
+### Line 22-24
 ```php
   
 require_once __DIR__ . '/composer/autoload_real.php';
@@ -59,7 +59,7 @@ require_once __DIR__ . '/composer/autoload_real.php';
 ```
 > This line includes the actual autoloader file created by Composer into the current script. This autoloader file handles the autoloading process for Composer dependencies, making sure that classes and files from Composer packages are loaded and ready for use in the application.
 
-## Line 25-26
+### Line 25-26
 ```php
 
 return ComposerAutoloaderInita9bbd3976012d5a30a5f6721e86c380d::getLoader();
