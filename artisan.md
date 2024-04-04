@@ -59,7 +59,7 @@ As the comment says that the following line is registering the *composer autoloa
 > By including this file, Laravel ensures that all classes from Composer dependencies are autoloaded and available for use within the application. This approach simplifies dependency management and improves code organization. Hence meaning that all the classes that have been loaded can be used!
 
 #### What is autoloader.php
-The file found here `vendor/autoloader.php`, go [here](non-laravel/autoloader.php) . I've not explained more because it is non-laravel!
+The file found here `vendor/autoloader.php`, go [here](vendor/autoloader.php) . I've not explained more because it is non-laravel!
 
 
 
