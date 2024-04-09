@@ -107,6 +107,16 @@ php artisan db:seed     # Populate your database with seeders
 
 # Have your favourite command? then pull request :)
 ```
+<details>
+  <summary><h5><b>Running Laravel on a Different Port?</b></h5></summary>
+  <p>If you want to run your Laravel application on a specific port, such as port 80, you can execute the following command:</p>
+  <pre><code>php artisan serve --port=80</code></pre>
+
+  <p>Additionally, you can specify the server's IP address along with the port:</p>
+  <pre><code>php artisan serve --host=0.0.0.0 --port=80</code></pre>
+
+</details>
+
 #### You can customize your commands!
 Also you can customize your own commands using this command:
 ```bash
