@@ -130,11 +130,7 @@ We'll start with the artisan file, [here](artisan.md).
 
 <h1 align="center" style="margin-top: 40px;margin-bottom:40px;font-weight:700;"> Jump to Your Interest 🚀</h1>
 
-- [Laravel Family Tree](non-laravel/tree.md) : The file system of the full functional laravel application.
-- [artisan](artisan.md) : *manages Laravel's CLI and Laravel framework*
-- [vendor/autoload.php](vendor/autoload.md) : *utilizes composer on the laravel project, actually it is initiated from [artisan](artisan.md).*
-- [bootstrap/app.php](bootstrap/app.md) : *set up the laravel application,initiated from [artisan](artisan.md).*
-- *coming soon..*
+Feel free to explore my the whole [roadmap](/non-laravel/roadmap.md).
 
 ## License
 [MIT](LICENSE)
