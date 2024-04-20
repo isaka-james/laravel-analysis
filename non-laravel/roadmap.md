@@ -8,8 +8,8 @@
   </p>
 </div>
 
-- [Laravel Family Tree](non-laravel/tree.md) : The file system of the full functional laravel application.
-- [artisan](artisan.md) : *manages Laravel's CLI and Laravel framework*
-- [vendor/autoload.php](vendor/autoload.md) : *utilizes composer on the laravel project, actually it is initiated from [artisan](artisan.md).*
-- [bootstrap/app.php](bootstrap/app.md) : *set up the laravel application,initiated from [artisan](artisan.md).*
+- [Laravel Family Tree](/non-laravel/tree.md) : The file system of the full functional laravel application.
+- [artisan](/artisan.md) : *manages Laravel's CLI and Laravel framework*
+- [vendor/autoload.php](/vendor/autoload.md) : *utilizes composer on the laravel project, actually it is initiated from [artisan](/artisan.md).*
+- [bootstrap/app.php](/bootstrap/app.md) : *set up the laravel application,initiated from [artisan](artisan.md).*
 - *coming soon..*
