@@ -52,14 +52,10 @@ define('LARAVEL_START', microtime(true));
    
 ```
 This line defines the constant `LARAVEL_START`, which stores the value returned by the microtime function with the parameter true. This function returns the current `Unix timestamp` with microseconds. Although its primary purpose is to initialize a timer to measure the framework's boot-up time, I haven't encountered instances of its usage within the framework itself. Perhaps its utilization could be explored independently.
+> Look in this example we can test the `LARAVEL_START` constant:
+>![image](https://github.com/isaka-james/laravel-analysis/assets/76619967/4bed604e-f04e-4b02-b944-8d0d2c0d9e91)
+> As a PHP artisan it is very crutual to love performance and test performance in your application that is how you can test the actual performance!.
 
-### artisan: line  8-11
-```php
-// Register the Composer autoloader...
-require __DIR__.'/vendor/autoload.php';
-    
-   
-```
 
 The line before this one tells us that it's adding the Composer autoloader. Even though the libraries here are from Composer and not specifically for Laravel, let me explain a bit. This line brings in the Composer autoloader file to our script. Composer creates this file, and it's in charge of finding and loading classes and files from all the libraries we installed with Composer. When we include this file, Laravel can automatically find and use all the classes from the libraries we added with Composer. This helps keep our code organized and makes managing dependencies easier. So, once we include this file, we can use all the classes without any extra effort.
 
