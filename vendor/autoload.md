@@ -1,7 +1,7 @@
 <div align="center">
   <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
   <h1>🚀  Web-Artisan Engineering  🤵‍♂   </h1>
-  <h1> autoload.php 📁</h1>
+  <h3> autoload.php 📁</h3>
   
   <p>
     <img src="https://komarev.com/ghpvc/?username=isaka-laravel&label=Visitors&color=0e75b6&style=flat" alt="since 2 April,2024" />
@@ -59,6 +59,9 @@ require_once __DIR__ . '/composer/autoload_real.php';
 ```
 > This line includes the actual autoloader file created by Composer into the current script. This autoloader file handles the autoloading process for Composer dependencies, making sure that classes and files from Composer packages are loaded and ready for use in the application.
 
+> Update!, Now I get that without understanding how composer works then this is going to be like a waste of time, since composer is the backbone of the laravel, then we must know what is happening there. go [here](/vendor/composer/autoload_real.php) to dig deeper on composer.
+
+
 ### Line 25-26
 ```php
 
@@ -82,3 +85,9 @@ Usually, the autoload.php file is included at the start of the application's mai
 
 As the app runs, the autoloader from autoload.php loads classes as they're needed, without manual require or include statements. This makes development simpler and reduces the need for manual code management.
 
+<h1 align="center" style="margin-top: 40px;margin-bottom:40px;font-weight:700;"> Jump to Your Interest 🚀</h1>
+
+Feel free to explore my the whole [roadmap](/non-laravel/roadmap.md).
+
+## License
+[MIT](LICENSE)
